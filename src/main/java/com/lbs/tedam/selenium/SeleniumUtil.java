@@ -123,6 +123,7 @@ public class SeleniumUtil implements HasLogger {
 		case WAIT:
 			commandParameterMap.put(ScriptParameterSahi.WAIT, parametersDTO.getStepTypeParameter());
 			operationList = createWaitOperation(commandParameterMap, parametersDTO);
+			break;
 		default:
 			break;
 		}
