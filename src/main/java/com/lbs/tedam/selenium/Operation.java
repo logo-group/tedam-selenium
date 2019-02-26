@@ -85,7 +85,7 @@ public abstract class Operation {
 			for (WebElement iframe : iframes) {
 				try {
 					driver.switchTo().frame(iframe);
-					new WebDriverWait(driver, getOperationParam().getWaitingTime())
+					new WebDriverWait(driver, 1)
 							.until(ExpectedConditions.visibilityOfElementLocated(findBy()));
 					found = true;
 					break;
